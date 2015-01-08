@@ -14,9 +14,9 @@ public class MainActivity extends Activity {
     TextView textView;
     EditText editText;
 
-    String Fizz = "Fizz";
-    String Buzz = "Buzz";
-    String FizzBuzz = "FizzBuzz";
+    String fizzString = "fizzString";
+    String buzzString = "buzzString";
+    String fizzbuzzString = "fizzStringbuzzString";
 
 
 
@@ -95,16 +95,16 @@ public class MainActivity extends Activity {
         String valueString = "";
 
         if (number%3 == 0 && number%5 == 0){
-            valueString = FizzBuzz;
+            valueString = fizzbuzzString;
         }
         else if (number%3 == 0) {
-            valueString = Fizz;
+            valueString = fizzString;
             fizzArray[fizzIndex] = number;
             fizzIndex++;
         }
 
         else if (number%5 == 0) {
-            valueString = Buzz;
+            valueString = buzzString;
             buzzArray[buzzIndex] = number;
             buzzIndex++;
         }
