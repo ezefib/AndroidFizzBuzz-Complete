@@ -2,6 +2,7 @@ package com.thinkful.fizzbuzzunit1;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -14,9 +15,9 @@ public class MainActivity extends Activity {
     TextView textView;
     EditText editText;
 
-    String fizzString = "fizzString";
-    String buzzString = "buzzString";
-    String fizzbuzzString = "fizzStringbuzzString";
+    String fizzString = "Fizz";
+    String buzzString = "Buzz";
+    String fizzbuzzString = "FizzBuzz";
 
 
 
@@ -77,12 +78,12 @@ public class MainActivity extends Activity {
         }
 
         for (int i = 0; i < fizzArray.length; i++) {
-            System.out.println("fizzArray [" + i + "] = " + fizzArray[i]);
+            Log.i("MyData", "fizzArray [" + i + "] = " + fizzArray[i]);
 
         }
 
         for (int i = 0; i < buzzArray.length; i++) {
-            System.out.println("buzzArray [" + i + "] = " + buzzArray[i]);
+            Log.i("MyData","buzzArray [" + i + "] = " + buzzArray[i]);
 
         }
 
